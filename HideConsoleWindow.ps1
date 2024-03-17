@@ -16,8 +16,6 @@ Add-Type @"
 $kittyhide = 0
 
 $kittywind = [Kernel32]::GetConsoleWindow()
-Write-Host "you can see this!"
-Start-Sleep 3
 [User32]::ShowWindow($kittywind, $kittyhide)
 Write-Host "you cannot see this!"
 Start-Sleep 15
